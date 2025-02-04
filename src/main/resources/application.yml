@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: demo
+
+# 서버 포트 설정
+# database 연동 설정
+# spring data jpa 설정
