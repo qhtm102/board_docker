@@ -1,7 +1,25 @@
-spring:
-  application:
-    name: demo
+
 
 # 서버 포트 설정
+server:
+    port: 8080
+
 # database 연동 설정
+spring:
+  database:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:
+    username:
+    password:
+  thymeleaf:
+    cache: false
+  application:
+            name: demo
+
 # spring data jpa 설정
+jpa:
+  database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  open-in-view: false
+  show-sql: true
+  hibernate:
+    dd-auto: create
